@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: web-container
-        image: host.docker.internal:80/demo/custom-nginx:v.23
+        image: host.docker.internal:80/demo/custom-nginx:v.24
         ports:
         - containerPort: 80
