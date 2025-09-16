@@ -20,3 +20,5 @@ spec:
         image: host.docker.internal:80/demo/custom-nginx:v.24
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: harbor-secret
