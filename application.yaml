@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/shyambista123/docker-jenkins-harbor-argocd-kubernetes/blob/main/infra/deployment.yaml
+    repoURL: https://github.com/shyambista123/docker-jenkins-harbor-argocd-kubernetes
     targetRevision: HEAD
     path: infra
   destination: 
