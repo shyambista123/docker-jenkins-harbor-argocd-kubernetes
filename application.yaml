@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-custom-deployment
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/shyambista123/docker-jenkins-harbor-argocd-kubernetes/blob/main/infra/deployment.yaml
+    targetRevision: HEAD
+    path: infra
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: myapp
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
