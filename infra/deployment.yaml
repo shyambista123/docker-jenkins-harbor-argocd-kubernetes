@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: web-container
-        image: localhost/demo/custom-nginx:v.9
+        image: localhost/demo/custom-nginx:v.11
         ports:
         - containerPort: 80
